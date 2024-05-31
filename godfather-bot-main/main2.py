@@ -528,7 +528,7 @@ async def data_google(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
                       modified_html = html_content.replace('{{Item_price}}', Item_price1)
                     with open('user_input/user_inputs3.html', 'w') as file:
                         file.write(modified_html)
-                    pdfkit_config = pdfkit.configuration(wkhtmltopdf='wkhtmltopdf/bin/wkhtmltopdf.exe')
+                    pdfkit_config = pdfkit.configuration(wkhtmltopdf='bin/wkhtmltopdf.exe')
                     pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf', configuration=pdfkit_config)
                     await context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                     print("pdf sended!")
@@ -554,7 +554,7 @@ async def data_google(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
                       modified_html = html_content.replace('{{Item_price}}', Item_price)
                     with open('user_input/user_inputs3.html', 'w') as file:
                         file.write(modified_html)
-                    pdfkit_config = pdfkit.configuration(wkhtmltopdf='wkhtmltopdf/bin/wkhtmltopdf.exe')
+                    pdfkit_config = pdfkit.configuration(wkhtmltopdf='bin/wkhtmltopdf.exe')
                     pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf',  configuration=pdfkit_config)
                     await context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                     print("pdf sended!")
@@ -616,7 +616,7 @@ async def data_apple(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
                           modified_html = html_content.replace('{{Item_price}}', Item_price1)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit_config = pdfkit.configuration(wkhtmltopdf='wkhtmltopdf/bin/wkhtmltopdf.exe')
+                        pdfkit_config = pdfkit.configuration(wkhtmltopdf='bin/wkhtmltopdf.exe')
                         pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf',  configuration=pdfkit_config)
                         await context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
@@ -642,7 +642,7 @@ async def data_apple(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
                           modified_html = html_content.replace('{{Item_price}}', Item_price)
                         with open('user_input/user_inputs3.html', 'w') as file:
                             file.write(modified_html)
-                        pdfkit_config = pdfkit.configuration(wkhtmltopdf='wkhtmltopdf/bin/wkhtmltopdf.exe')
+                        pdfkit_config = pdfkit.configuration(wkhtmltopdf='bin/wkhtmltopdf.exe')
                         pdfkit.from_file('user_input/user_inputs3.html', 'user_input/output.pdf',  configuration=pdfkit_config)
                         await context.bot.send_document(chat_id=update.effective_chat.id, document=open('user_input/output.pdf', 'rb'))
                         print("pdf sended!")
