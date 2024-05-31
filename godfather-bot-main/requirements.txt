@@ -1,4 +1,6 @@
 pdfkit
+wkhtmltopdf
+pdfkit
 logging
 beautifulsoup4
 requests
