@@ -1,7 +1,7 @@
-python-telegram-bot==21.2
 pdfkit
 wkhtmltopdf
 pdfkit
 logging
 beautifulsoup4
 requests
+python-telegram-bot==21.2
